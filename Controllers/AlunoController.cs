@@ -28,4 +28,8 @@ public class AlunoController : Controller
         };
         return View(aluno1);
     }
+    public IActionResult CriarAluno()
+    {
+        return View();
+    }
 }

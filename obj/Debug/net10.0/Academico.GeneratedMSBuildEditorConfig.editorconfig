@@ -1,14 +1,22 @@
 is_global = true
 build_property.TargetFramework = net10.0
-build_property.TargetFrameworkIdentifier = .NETCoreApp
-build_property.TargetFrameworkVersion = v10.0
+build_property.TargetFramework = net10.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
 build_property.RootNamespace = Academico
 build_property.RootNamespace = Academico
 build_property.ProjectDir = /home/victorhh/Documentos/ProgWebI/Academico/
@@ -21,6 +29,10 @@ build_property.MSBuildProjectDirectory = /home/victorhh/Documentos/ProgWebI/Acad
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
+
+[/home/victorhh/Documentos/ProgWebI/Academico/Views/Aluno/CriarAluno.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWx1bm8vQ3JpYXJBbHVuby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
 
 [/home/victorhh/Documentos/ProgWebI/Academico/Views/Aluno/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWx1bm8vSW5kZXguY3NodG1s
