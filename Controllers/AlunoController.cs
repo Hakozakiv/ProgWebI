@@ -1,11 +1,17 @@
 using Academico.Models;
+using Academico.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Academico.Controllers;
 
 public class AlunoController : Controller
 {
-    public IActionResult Index()
+    readonly IAlunoRepository _alunoRepository;
+    public AlunoController(IAlunoRepository alunoRepository)
+    {
+        _alunoRepository = alunoRepository;
+    }
+        public IActionResult Index()
     {
         List<Aluno> aluno1 = new List<Aluno>()
         {
@@ -31,5 +37,11 @@ public class AlunoController : Controller
     public IActionResult CriarAluno()
     {
         return View();
+    }
+    [HttpPost]
+    public async Task<IActionResult> CriarAlunoAsync(Aluno aluno)
+    {
+        await _alunoRepository.CriarAlunoAsync(aluno);
+        return RedirectToAction("CriarAluno");
     }
 }
