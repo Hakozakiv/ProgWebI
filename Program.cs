@@ -8,6 +8,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IAlunoRepository, AlunoRepository>();
+builder.Services.AddScoped<IProfessorRepository, ProfessorRepository>();
 builder.Services.AddDbContext<AcademicoContext>
     (options => options.UseMySql(connectionString,
     ServerVersion.AutoDetect(connectionString))

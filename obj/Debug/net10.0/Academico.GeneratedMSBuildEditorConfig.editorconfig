@@ -34,8 +34,12 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWx1bm8vQ3JpYXJBbHVuby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/victorhh/Documentos/ProgWebI/Academico/Views/Aluno/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWx1bm8vSW5kZXguY3NodG1s
+[/home/victorhh/Documentos/ProgWebI/Academico/Views/Aluno/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWx1bm8vaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/victorhh/Documentos/ProgWebI/Academico/Views/Professor/CriarProfessor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZmVzc29yL0NyaWFyUHJvZmVzc29yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/victorhh/Documentos/ProgWebI/Academico/Views/Shared/Error.cshtml]

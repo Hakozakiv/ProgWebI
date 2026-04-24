@@ -11,28 +11,10 @@ public class AlunoController : Controller
     {
         _alunoRepository = alunoRepository;
     }
-        public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        List<Aluno> aluno1 = new List<Aluno>()
-        {
-            new Aluno ()
-            {
-                Nome = "Victor Hugo",
-                Cpf = "123456789",
-                Curso = "TADS",
-                Matricula = "123654569852",
-                DataNascimento = new DateOnly(1999, 07, 28)
-            },
-            new Aluno ()
-            {
-                Nome = "Leonardo",
-                Cpf = "1256482262954",
-                Curso = "TADS",
-                Matricula ="485426295959",
-                DataNascimento = new DateOnly(2000, 09, 12)
-            }
-        };
-        return View(aluno1);
+      var aluno = await _alunoRepository.GetAlunoRepositoriesAsync();
+      return View (aluno);
     }
     public IActionResult CriarAluno()
     {
@@ -41,7 +23,16 @@ public class AlunoController : Controller
     [HttpPost]
     public async Task<IActionResult> CriarAlunoAsync(Aluno aluno)
     {
-        await _alunoRepository.CriarAlunoAsync(aluno);
+        if(await _alunoRepository.CriarAlunoAsync(aluno))
+        {
+            TempData["Tipo"]= "Sucessso";
+            TempData["Mensagem"] = $"Aluno {aluno.Nome} Cadastro com sucesso!";
+        }
+        else
+        {
+            TempData["Tipo"]= "Falha";
+            TempData["Messagem"] = $"Aluno {aluno.Nome} não cadastrado!";
+        }
         return RedirectToAction("CriarAluno");
     }
 }
