@@ -1,0 +1,27 @@
+@model List<Academico.Models.Aluno>;
+@{
+
+}
+@foreach(Aluno item in Model){
+  <div class="card mb-3" style="max-width: 650px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="img/Anonimo.jpeg" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body h-100 d-flex flex-column justify-content-center">
+        <p class="card-title"><strong>Nome:</strong> @item.Nome</p>
+        <p class="card-text"><strong>Data de nasc:</strong></p>
+        <p class="card-text"><strong>Curso: </strong>@item.Curso</p>  
+        <P class="card-text"><strong>Matricula:</strong> @item.Matricula</P>
+      </div>
+    </div>
+  </div>
+    <div class="lista-disciplina">
+        <h2 class="card-text">Disciplina cursadas</h2>
+        <p class="card-text">Programação Web I</p>
+        <p class="card-text">fund. Banco de Dados</p>
+        <p class="card-text">Fundamentos de programação orientada a objeto</p>
+    </div>
+</div>
+}
